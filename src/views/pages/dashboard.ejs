@@ -1,0 +1,83 @@
+<div class="app">
+  <aside class="sidebar">
+    <h2>BarberFlow</h2>
+    <a href="/dashboard">Dashboard</a>
+    <a href="#reservas">Reservas</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#barberos">Barberos</a>
+    <a href="/client">Panel cliente</a>
+    <button class="logout">Cerrar sesión</button>
+  </aside>
+
+  <main>
+    <header class="topbar">
+      <div>
+        <h1>Panel Administrativo</h1>
+        <p>Gestión premium de barbería.</p>
+      </div>
+      <button class="btn gold" onclick="openPayment()">Probar Stripe</button>
+    </header>
+
+    <section class="metrics">
+      <div class="metric"><span>Reservas hoy</span><strong id="mToday">0</strong></div>
+      <div class="metric"><span>Ingresos</span><strong id="mRevenue">$0</strong></div>
+      <div class="metric"><span>Clientes</span><strong id="mClients">0</strong></div>
+      <div class="metric"><span>Ocupación</span><strong id="mOccupancy">0%</strong></div>
+    </section>
+
+    <section class="panel">
+      <h2>Gráfico de rendimiento</h2>
+      <canvas id="chart"></canvas>
+    </section>
+
+    <section class="grid2">
+      <div class="panel" id="servicios">
+        <h2>Servicios</h2>
+        <form id="serviceForm" class="mini-form">
+          <input name="name" placeholder="Nombre servicio" required>
+          <input name="duration" type="number" placeholder="Duración min" required>
+          <input name="price" type="number" placeholder="Precio CLP" required>
+          <input name="description" placeholder="Descripción">
+          <button class="btn gold">Crear servicio</button>
+        </form>
+        <div id="servicesList"></div>
+      </div>
+
+      <div class="panel" id="barberos">
+        <h2>Barberos</h2>
+        <form id="barberForm" class="mini-form">
+          <input name="name" placeholder="Nombre barbero" required>
+          <input name="email" placeholder="Email">
+          <input name="phone" placeholder="Teléfono">
+          <input name="specialty" placeholder="Especialidad">
+          <button class="btn gold">Crear barbero</button>
+        </form>
+        <div id="barbersList"></div>
+      </div>
+    </section>
+
+    <section class="panel" id="reservas">
+      <h2>Crear reserva</h2>
+      <form id="bookingForm" class="booking-form">
+        <input name="client_name" placeholder="Cliente" required>
+        <input name="client_email" placeholder="Email cliente">
+        <select name="service_id" id="bookingServices" required></select>
+        <select name="barber_id" id="bookingBarbers" required></select>
+        <input name="booking_date" type="date" required>
+        <input name="booking_time" type="time" required>
+        <input name="notes" placeholder="Notas">
+        <button class="btn gold">Reservar</button>
+      </form>
+    </section>
+
+    <section class="panel">
+      <h2>Reservas</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Cliente</th><th>Servicio</th><th>Barbero</th><th>Fecha</th><th>Hora</th><th>Estado</th><th>Acción</th></tr></thead>
+          <tbody id="bookingsTable"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</div>

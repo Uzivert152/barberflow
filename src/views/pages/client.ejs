@@ -1,0 +1,61 @@
+﻿<div class="client-shell">
+  <header class="client-header">
+    <a href="/" class="brand">BarberFlow</a>
+    <div>
+      <a href="#myBookings" class="btn ghost">Mis reservas</a>
+      <a class="btn gold" href="/logout">Salir</a>
+    </div>
+  </header>
+
+  <section class="client-hero">
+    <div>
+      <span class="eyebrow">Reserva online</span>
+      <h1>Agenda tu próxima visita.</h1>
+      <p>Elige servicio, barbero, fecha y horario disponible. Tu reserva quedará confirmada al instante.</p>
+    </div>
+  </section>
+
+  <main class="client-main">
+    <section class="panel booking-panel">
+      <div class="panel-head">
+        <h2>Nueva reserva</h2>
+        <p>Completa los datos para tomar tu hora.</p>
+      </div>
+
+      <form id="bookingForm" class="client-booking-form">
+        <input name="client_name" placeholder="Tu nombre" required>
+        <input name="client_email" placeholder="Tu correo">
+        <select name="service_id" id="bookingServices" required></select>
+        <select name="barber_id" id="bookingBarbers" required></select>
+        <input name="booking_date" type="date" required>
+        <input name="booking_time" type="time" required>
+        <input name="notes" placeholder="Comentarios opcionales">
+        <button class="btn gold">Confirmar reserva</button>
+      </form>
+    </section>
+
+    <section id="myBookings" class="panel">
+      <div class="panel-head">
+        <h2>Mis reservas</h2>
+        <p>Consulta o cancela tus horas activas.</p>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Servicio</th>
+              <th>Barbero</th>
+              <th>Fecha</th>
+              <th>Hora</th>
+              <th>Estado</th>
+              <th>Acción</th>
+            </tr>
+          </thead>
+          <tbody id="bookingsTable"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</div>
+

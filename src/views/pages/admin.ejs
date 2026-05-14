@@ -1,0 +1,103 @@
+﻿<div class="system-shell">
+  <aside class="admin-sidebar">
+    <div class="side-brand">BarberFlow</div>
+    <span class="side-label">Panel del Barbero</span>
+
+    <a href="#today">Hoy</a>
+    <a href="#agenda">Agenda</a>
+    <a href="#services">Servicios</a>
+    <a href="/">Ver página pública</a>
+
+    <a href="/logout">Cerrar sesión</a>
+  </aside>
+
+  <main class="system-main">
+    <header class="system-topbar">
+      <div>
+        <h1>Agenda del Barbero</h1>
+        <p>Vista profesional de cortes, clientes, estados y rendimiento.</p>
+      </div>
+
+      <a href="/" class="btn gold">Ver página de reservas</a>
+    </header>
+
+    <section class="metrics">
+      <div class="metric">
+        <span>Reservas hoy</span>
+        <strong id="mToday">0</strong>
+      </div>
+
+      <div class="metric">
+        <span>Horas agendadas</span>
+        <strong id="mHours">0h</strong>
+      </div>
+
+      <div class="metric">
+        <span>Ingresos estimados</span>
+        <strong id="mRevenue">$0</strong>
+      </div>
+
+      <div class="metric">
+        <span>Pendientes</span>
+        <strong id="mPending">0</strong>
+      </div>
+    </section>
+
+    <section id="today" class="panel">
+      <div class="panel-head">
+        <h2>Cortes reservados</h2>
+        <p>Reservas recibidas desde la página pública.</p>
+      </div>
+
+      <div class="filters">
+        <input id="filterDate" type="date">
+        <select id="filterStatus">
+          <option value="">Todos los estados</option>
+          <option value="pending">Pendientes</option>
+          <option value="confirmed">Confirmadas</option>
+          <option value="completed">Completadas</option>
+          <option value="no_show">No asistió</option>
+          <option value="cancelled">Canceladas</option>
+        </select>
+        <select id="filterBarber"></select>
+        <button class="btn ghost" id="clearFilters">Limpiar filtros</button>
+      </div>
+
+      <div id="adminCutsGrid" class="cuts-grid"></div>
+    </section>
+
+    <section id="agenda" class="panel">
+      <div class="panel-head">
+        <h2>Agenda completa</h2>
+        <p>Detalle de cliente, servicio, barbero, fecha, hora y estado.</p>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Cliente</th>
+              <th>Contacto</th>
+              <th>Servicio</th>
+              <th>Barbero</th>
+              <th>Fecha</th>
+              <th>Hora</th>
+              <th>Estado</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="bookingsTable"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="services" class="panel">
+      <div class="panel-head">
+        <h2>Servicios disponibles</h2>
+        <p>Servicios que los clientes pueden reservar.</p>
+      </div>
+
+      <div id="servicesList"></div>
+    </section>
+  </main>
+</div>

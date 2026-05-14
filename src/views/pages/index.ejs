@@ -1,0 +1,75 @@
+﻿<section class="public-page">
+  <nav class="public-nav">
+    <a class="brand" href="/">BarberFlow</a>
+    <div>
+      <a href="#servicios">Servicios</a>
+      <a href="#reservar">Reservar</a>
+      <a href="/login" class="btn ghost">Admin</a>
+    </div>
+  </nav>
+
+  <section class="public-hero">
+    <div>
+      <span class="eyebrow">Barbería premium</span>
+      <h1>Agenda tu corte con estilo y precisión.</h1>
+      <p>Reserva online sin crear cuenta. Elige servicio, barbero, fecha y hora.</p>
+      <a href="#reservar" class="btn gold big">Agendar hora</a>
+    </div>
+
+    <div class="hero-card">
+      <h3>Servicios destacados</h3>
+      <div class="service-line"><span>Corte de pelo</span><strong>$15.000</strong></div>
+      <div class="service-line"><span>Cejas</span><strong>$5.000</strong></div>
+      <div class="service-line"><span>Barba</span><strong>$12.000</strong></div>
+      <div class="service-line"><span>Completo</span><strong>$28.000</strong></div>
+    </div>
+  </section>
+
+  <section id="servicios" class="public-section">
+    <h2>Servicios</h2>
+    <div class="public-grid">
+      <article><h3>Corte de pelo</h3><strong>$15.000</strong><p>Corte profesional con terminación premium.</p></article>
+      <article><h3>Cejas</h3><strong>$5.000</strong><p>Perfilado limpio y natural.</p></article>
+      <article><h3>Barba</h3><strong>$12.000</strong><p>Perfilado, navaja y cuidado de barba.</p></article>
+      <article><h3>Completo</h3><strong>$28.000</strong><p>Corte de pelo, barba y cejas.</p></article>
+    </div>
+  </section>
+
+  <section id="reservar" class="public-section">
+    <div class="booking-card">
+      <div>
+        <span class="eyebrow">Reserva online</span>
+        <h2>Agendar hora</h2>
+        <p>Completa tus datos. La reserva llegará al panel del administrador como pendiente.</p>
+      </div>
+
+      <form id="publicBookingForm" class="public-booking-form">
+        <input name="client_name" placeholder="Nombre completo" required>
+        <input name="client_email" type="email" placeholder="Correo electrónico">
+        <input name="client_phone" placeholder="Teléfono / WhatsApp" required>
+
+        <select name="service_id" id="publicServices" required></select>
+        <select name="barber_id" id="publicBarbers" required></select>
+
+        <input name="booking_date" type="date" required>
+        <select name="booking_time" required>
+          <option value="">Seleccionar hora</option>
+          <option value="09:00">09:00</option>
+          <option value="10:00">10:00</option>
+          <option value="11:00">11:00</option>
+          <option value="12:00">12:00</option>
+          <option value="15:00">15:00</option>
+          <option value="16:00">16:00</option>
+          <option value="17:00">17:00</option>
+          <option value="18:00">18:00</option>
+        </select>
+
+        <textarea name="notes" placeholder="Comentario opcional: tipo de corte, referencia, detalle especial..."></textarea>
+
+        <button class="btn gold w-100">Enviar reserva</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>BarberFlow © 2026 — Sistema profesional para barberías.</footer>
+</section>
