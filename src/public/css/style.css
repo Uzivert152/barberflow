@@ -973,3 +973,395 @@ th{
   }
 
 }
+
+/* ========================= */
+/* FIX RESPONSIVE MOBILE PRO */
+/* ========================= */
+
+html,
+body{
+  width:100%;
+  max-width:100%;
+  overflow-x:hidden;
+}
+
+img,
+video,
+iframe{
+  max-width:100%;
+}
+
+@media(max-width:768px){
+
+  body{
+    background:#050607;
+  }
+
+  .home-premium{
+    width:100%;
+    overflow-x:hidden;
+  }
+
+  .home-nav{
+    width:100%;
+    height:auto;
+    padding:18px 16px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:18px;
+    position:relative;
+  }
+
+  .home-brand{
+    width:100%;
+    justify-content:center;
+  }
+
+  .brand-shield{
+    width:46px;
+    height:54px;
+    font-size:18px;
+    flex-shrink:0;
+  }
+
+  .home-brand strong{
+    font-size:24px;
+    letter-spacing:1px;
+  }
+
+  .home-brand span{
+    font-size:9px;
+    letter-spacing:2.5px;
+  }
+
+  .home-links{
+    width:100%;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+  }
+
+  .home-links a{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:46px;
+    padding:12px 10px;
+    border-radius:12px;
+    background:rgba(255,255,255,.07);
+    border:1px solid rgba(255,255,255,.10);
+    font-size:14px;
+    font-weight:800;
+    text-align:center;
+  }
+
+  .home-links .admin-pill{
+    grid-column:1 / -1;
+    border-color:rgba(201,154,85,.55);
+    color:#e4bd78;
+  }
+
+  .home-hero{
+    width:100%;
+    min-height:auto;
+    padding:34px 16px 50px;
+    display:grid;
+    grid-template-columns:1fr;
+    gap:28px;
+  }
+
+  .tag,
+  .section-label{
+    max-width:100%;
+    white-space:normal;
+    text-align:center;
+    justify-content:center;
+    font-size:11px;
+    line-height:1.4;
+    letter-spacing:1.5px;
+    padding:10px 14px;
+  }
+
+  .hero-text{
+    width:100%;
+    text-align:left;
+  }
+
+  .hero-text h1{
+    width:100%;
+    max-width:100%;
+    font-size:40px;
+    line-height:1.02;
+    letter-spacing:-1.8px;
+    margin:22px 0 18px;
+    word-break:normal;
+  }
+
+  .hero-text p{
+    max-width:100%;
+    font-size:16px;
+    line-height:1.65;
+    color:#d7d7d7;
+  }
+
+  .hero-buttons{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    margin-top:24px;
+  }
+
+  .btn-gold,
+  .btn-dark{
+    width:100%;
+    min-height:52px;
+    padding:15px 18px;
+    border-radius:12px;
+    font-size:15px;
+  }
+
+  .hero-mini{
+    width:100%;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+    margin-top:22px;
+  }
+
+  .hero-mini span{
+    width:100%;
+    text-align:center;
+    font-size:13px;
+    padding:10px 8px;
+  }
+
+  .hero-image{
+    width:100%;
+    height:360px;
+    border-radius:24px;
+    background-position:center;
+  }
+
+  .image-card-text{
+    left:22px;
+    right:22px;
+    bottom:22px;
+  }
+
+  .image-card-text span{
+    font-size:10px;
+    letter-spacing:2px;
+  }
+
+  .image-card-text h3{
+    font-size:28px;
+    line-height:1.15;
+  }
+
+  .home-section{
+    width:100%;
+    padding:56px 16px;
+  }
+
+  .about-grid,
+  .booking-area,
+  .contact-card{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:24px;
+  }
+
+  .home-section h2{
+    width:100%;
+    max-width:100%;
+    font-size:34px;
+    line-height:1.1;
+    letter-spacing:-1px;
+    margin:18px 0 14px;
+  }
+
+  .about-grid p,
+  .section-sub,
+  .booking-info p,
+  .contact-card p{
+    font-size:16px;
+    line-height:1.7;
+  }
+
+  .services-grid{
+    width:100%;
+    display:grid;
+    grid-template-columns:1fr;
+    gap:18px;
+    margin-top:28px;
+  }
+
+  .services-grid article{
+    width:100%;
+    border-radius:22px;
+  }
+
+  .service-img{
+    height:220px;
+  }
+
+  .service-body{
+    padding:22px;
+  }
+
+  .service-body h3{
+    font-size:24px;
+  }
+
+  .service-body p{
+    font-size:15px;
+  }
+
+  .service-body strong{
+    font-size:24px;
+  }
+
+  .booking-form{
+    width:100%;
+    padding:20px;
+    display:grid;
+    grid-template-columns:1fr;
+    gap:12px;
+    border-radius:22px;
+  }
+
+  .booking-form input,
+  .booking-form select,
+  .booking-form textarea{
+    width:100%;
+    min-width:0;
+    font-size:15px;
+    padding:15px;
+  }
+
+  .booking-form textarea,
+  .booking-form .full{
+    grid-column:auto;
+  }
+
+  .booking-calendar{
+    width:100%;
+    padding:16px;
+    border-radius:18px;
+  }
+
+  .calendar-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+  }
+
+  .calendar-day{
+    min-height:86px;
+    padding:12px 8px;
+  }
+
+  .calendar-day strong{
+    font-size:22px;
+  }
+
+  .contact-card > div:last-child{
+    padding:22px;
+    border-radius:22px;
+  }
+
+  .contact-card strong{
+    font-size:16px;
+  }
+
+  .contact-card span{
+    font-size:15px;
+  }
+
+  .home-footer{
+    width:100%;
+    padding:36px 16px 95px;
+    display:block;
+    text-align:center;
+  }
+
+  .home-footer span{
+    display:none;
+  }
+
+  .whatsapp-button{
+    left:14px;
+    right:14px;
+    bottom:14px;
+    width:auto;
+    justify-content:center;
+    padding:15px 18px;
+    border-radius:16px;
+    font-size:15px;
+  }
+
+  .whatsapp-button img{
+    width:24px;
+    height:24px;
+  }
+}
+
+@media(max-width:420px){
+
+  .home-brand strong{
+    font-size:21px;
+  }
+
+  .home-brand span{
+    font-size:8px;
+  }
+
+  .hero-text h1{
+    font-size:36px;
+  }
+
+  .home-section h2{
+    font-size:31px;
+  }
+
+  .hero-mini{
+    grid-template-columns:1fr;
+  }
+
+  .calendar-grid{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+@media(min-width:769px) and (max-width:1100px){
+
+  .home-nav{
+    padding:22px 32px;
+  }
+
+  .home-hero,
+  .home-section{
+    padding-left:32px;
+    padding-right:32px;
+  }
+
+  .home-hero{
+    grid-template-columns:1fr;
+  }
+
+  .services-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .booking-area,
+  .contact-card,
+  .about-grid{
+    grid-template-columns:1fr;
+  }
+
+  .hero-text h1{
+    font-size:58px;
+  }
+}
