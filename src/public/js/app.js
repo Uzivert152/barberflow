@@ -470,3 +470,22 @@ document.addEventListener("change", event => {
     loadAvailableSlots().catch(() => fillDefaultHours());
   }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const menuBtn = document.getElementById("mobileMenuBtn");
+  const menu = document.getElementById("homeLinks");
+
+  if (menuBtn && menu) {
+    menuBtn.addEventListener("click", () => {
+      menu.classList.toggle("open");
+      menuBtn.textContent = menu.classList.contains("open") ? "×" : "☰";
+    });
+
+    menu.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        menu.classList.remove("open");
+        menuBtn.textContent = "☰";
+      });
+    });
+  }
+});
