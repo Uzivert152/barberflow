@@ -1,18 +1,30 @@
-<section class="auth-page">
-  <form class="auth-card" id="loginForm">
-    <a href="/" class="brand auth-brand">BarberFlow</a>
+Ôªø<section class="login-premium">
+  <div class="login-card">
+    <a href="/" class="login-logo">
+      <span>BF</span>
+      <div>
+        <strong>BARBERFLOW</strong>
+        <small>BARBER√çA PREMIUM</small>
+      </div>
+    </a>
+
     <h1>Ingresar</h1>
-    <p>Accede seg˙n tu perfil: administrador, barbero o cliente.</p>
+    <p>Accede al panel de administraci√≥n de la barber√≠a.</p>
 
-    <label>Correo</label>
-    <input name="email" type="email" placeholder="correo@barberflow.cl" required>
+    <form id="loginForm">
+      <label>Correo</label>
+      <input name="email" type="email" placeholder="admin@barberflow.cl" required>
 
-    <label>ContraseÒa</label>
-    <input name="password" type="password" placeholder="ïïïïïïïï" required>
+      <label>Contrase√±a</label>
+      <input name="password" type="password" placeholder="Contrase√±a" required>
 
-    <button class="btn gold w-100">Ingresar</button>
+      <button type="submit">Ingresar</button>
+    </form>
 
-    <small>øNo tienes cuenta? <a href="/register">Crear cuenta</a></small>
+    <div class="login-help">
+      <span>Admin:</span> admin@barberflow.cl / admin123
+    </div>
+
     <div id="authMsg"></div>
-  </form>
+  </div>
 </section>
