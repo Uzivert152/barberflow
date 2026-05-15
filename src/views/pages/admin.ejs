@@ -1,55 +1,99 @@
-﻿<div class="system-shell">
-  <aside class="admin-sidebar">
-    <div class="side-brand">BarberFlow</div>
-    <span class="side-label">Panel del Barbero</span>
+﻿<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <a href="#today">Hoy</a>
-    <a href="#agenda">Agenda</a>
-    <a href="#services">Servicios</a>
-    <a href="/">Ver página pública</a>
+<div class="premium-admin">
 
-    <a href="/logout">Cerrar sesión</a>
+  <aside class="premium-sidebar">
+    <div class="premium-logo">
+      <div class="logo-shield">BF</div>
+      <div>
+        <strong>BARBERFLOW</strong>
+        <span>BARBERÍA PREMIUM</span>
+      </div>
+    </div>
+
+    <nav class="premium-menu">
+      <a class="active" href="#today">Panel</a>
+      <a href="#agenda">Reservas</a>
+      <a href="#agenda">Calendario</a>
+      <a href="#agenda">Clientes</a>
+      <a href="#agenda">Barberos</a>
+      <a href="#services">Servicios</a>
+      <a href="#agenda">Reportes</a>
+      <a href="#services">Ajustes</a>
+      <a href="/logout" class="logout-link">Cerrar sesión</a>
+    </nav>
+
+    <div class="sidebar-chair"></div>
   </aside>
 
-  <main class="system-main">
-    <header class="system-topbar">
+  <main class="premium-main">
+
+    <header class="premium-top">
+      <div></div>
+
+      <div class="admin-profile">
+        <div class="profile-photo"></div>
+        <div>
+          <strong>Barbero 1</strong>
+          <span>Administrador</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="premium-hero">
       <div>
+        <span class="admin-kicker">BIENVENIDO</span>
         <h1>Agenda del Barbero</h1>
+        <div class="gold-line"></div>
         <p>Vista profesional de cortes, clientes, estados y rendimiento.</p>
       </div>
 
-      <a href="/" class="btn gold">Ver página de reservas</a>
-    </header>
-
-    <section class="metrics">
-      <div class="metric">
-        <span>Reservas hoy</span>
-        <strong id="mToday">0</strong>
-      </div>
-
-      <div class="metric">
-        <span>Horas agendadas</span>
-        <strong id="mHours">0h</strong>
-      </div>
-
-      <div class="metric">
-        <span>Ingresos estimados</span>
-        <strong id="mRevenue">$0</strong>
-      </div>
-
-      <div class="metric">
-        <span>Pendientes</span>
-        <strong id="mPending">0</strong>
+      <div class="tools-banner">
+        <span>ESTILO · PRECISIÓN · CONFIANZA</span>
       </div>
     </section>
 
-    <section id="today" class="panel">
-      <div class="panel-head">
-        <h2>Cortes reservados</h2>
-        <p>Reservas recibidas desde la página pública.</p>
+    <section class="premium-metrics">
+      <div class="premium-metric">
+        <div class="metric-icon">▣</div>
+        <div>
+          <span>Reservas hoy</span>
+          <strong id="mToday">0</strong>
+        </div>
       </div>
 
-      <div class="filters">
+      <div class="premium-metric">
+        <div class="metric-icon">◷</div>
+        <div>
+          <span>Horas agendadas</span>
+          <strong id="mHours">0.0h</strong>
+        </div>
+      </div>
+
+      <div class="premium-metric">
+        <div class="metric-icon">$</div>
+        <div>
+          <span>Ingresos estimados</span>
+          <strong id="mRevenue">$0</strong>
+        </div>
+      </div>
+
+      <div class="premium-metric">
+        <div class="metric-icon">◎</div>
+        <div>
+          <span>Pendientes</span>
+          <strong id="mPending">0</strong>
+        </div>
+      </div>
+    </section>
+
+    <section id="today" class="premium-section">
+      <span class="section-kicker">CORTES RESERVADOS</span>
+      <p>Reservas recibidas desde la página pública.</p>
+
+      <div class="premium-filters">
         <input id="filterDate" type="date">
         <select id="filterStatus">
           <option value="">Todos los estados</option>
@@ -60,17 +104,14 @@
           <option value="cancelled">Canceladas</option>
         </select>
         <select id="filterBarber"></select>
-        <button class="btn ghost" id="clearFilters">Limpiar filtros</button>
+        <button class="premium-clear" id="clearFilters">Limpiar filtros</button>
       </div>
 
-      <div id="adminCutsGrid" class="cuts-grid"></div>
+      <div id="adminCutsGrid" class="premium-cuts"></div>
     </section>
 
-    <section id="agenda" class="panel">
-      <div class="panel-head">
-        <h2>Agenda completa</h2>
-        <p>Detalle de cliente, servicio, barbero, fecha, hora y estado.</p>
-      </div>
+    <section id="agenda" class="premium-section table-section">
+      <span class="section-kicker">AGENDA COMPLETA</span>
 
       <div class="table-wrap">
         <table>
@@ -91,13 +132,17 @@
       </div>
     </section>
 
-    <section id="services" class="panel">
-      <div class="panel-head">
-        <h2>Servicios disponibles</h2>
-        <p>Servicios que los clientes pueden reservar.</p>
-      </div>
-
+    <section id="services" class="premium-section">
+      <span class="section-kicker">SERVICIOS</span>
       <div id="servicesList"></div>
     </section>
+
+    <footer class="premium-footer">
+      <span></span>
+      <strong>✂</strong>
+      <span></span>
+    </footer>
+
   </main>
+
 </div>

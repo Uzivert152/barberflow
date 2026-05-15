@@ -1,69 +1,72 @@
-﻿<section class="barber-site">
+﻿<div class="home-premium">
 
-  <nav class="barber-nav">
-    <a href="/" class="brand-mark">
-      <span>BF</span>
-      BarberFlow
-    </a>
-
-    <div class="nav-links">
-      <a href="#nosotros">Nosotros</a>
-      <a href="#servicios">Servicios</a>
-      <a href="#reservar">Reservar</a>
-      <a href="#contacto">Contacto</a>
-      <a href="/login" class="nav-admin">Admin</a>
-    </div>
-  </nav>
-
-  <section class="barber-hero">
-    <div class="hero-overlay"></div>
-
-    <div class="hero-content">
-      <span class="hero-kicker">Barbería premium para caballeros</span>
-
-      <h1>Estilo, precisión y experiencia en cada corte.</h1>
-
-      <p>
-        Agenda tu hora online en segundos. Elige servicio, barbero,
-        fecha y horario disponible sin esperar por WhatsApp.
-      </p>
-
-      <div class="hero-buttons">
-        <a href="#reservar" class="btn-main">Agendar hora</a>
-        <a href="#servicios" class="btn-secondary">Ver servicios</a>
+  <nav class="home-nav">
+    <div class="home-brand">
+      <div class="brand-shield">BF</div>
+      <div>
+        <strong>BARBERFLOW</strong>
+        <span>BARBERÍA PREMIUM</span>
       </div>
     </div>
 
-    <div class="hero-info-card">
-      <strong>Reserva online</strong>
-      <span>Cortes · Barba · Cejas · Completo</span>
+    <div class="home-links">
+      <a href="#nosotros">Nosotros</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#reserva">Reservar</a>
+      <a href="#contacto">Contacto</a>
+      <a href="/login" class="admin-pill">Admin</a>
+    </div>
+  </nav>
+
+  <section class="home-hero">
+    <div class="hero-text">
+      <span class="tag">BARBERÍA PREMIUM PARA CABALLEROS</span>
+      <h1>Estilo, precisión y experiencia en cada corte.</h1>
+      <p>Agenda tu hora online en segundos. Elige servicio, barbero, fecha y horario disponible sin esperar por WhatsApp.</p>
+
+      <div class="hero-buttons">
+        <a href="#reserva" class="btn-gold">Agendar hora</a>
+        <a href="#servicios" class="btn-dark">Ver servicios</a>
+      </div>
+
+      <div class="hero-mini">
+        <span>Reserva online</span>
+        <span>Cortes</span>
+        <span>Barba</span>
+        <span>Cejas</span>
+        <span>Completo</span>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <div class="image-card-text">
+        <span>EXPERIENCIA PREMIUM</span>
+        <h3>Tu imagen habla antes que tú.</h3>
+      </div>
     </div>
   </section>
 
-  <section id="nosotros" class="about-section">
+  <section id="nosotros" class="home-section about-grid">
     <div>
-      <span class="section-tag">Nuestra esencia</span>
+      <span class="section-label">NUESTRA ESENCIA</span>
       <h2>Una barbería con carácter, técnica y atención personalizada.</h2>
     </div>
 
     <p>
-      Creamos una experiencia cómoda, elegante y profesional. Desde un corte clásico
-      hasta un servicio completo, cada atención está pensada para que salgas con
-      seguridad, estilo y una imagen impecable.
+      Creamos una experiencia cómoda, elegante y profesional. Desde un corte clásico hasta un servicio completo,
+      cada atención está pensada para que salgas con seguridad, estilo y una imagen impecable.
     </p>
   </section>
 
-  <section id="servicios" class="services-section-v2">
-    <div class="section-center">
-      <span class="section-tag">Servicios</span>
-      <h2>Elige tu próxima atención</h2>
-      <p>Precios claros, duración definida y reserva inmediata.</p>
-    </div>
+  <section id="servicios" class="home-section">
+    <span class="section-label">SERVICIOS</span>
+    <h2>Elige tu próxima atención</h2>
+    <p class="section-sub">Precios claros, duración definida y reserva inmediata.</p>
 
-    <div class="service-cards-v2">
+    <div class="services-grid">
       <article>
-        <div class="service-photo corte"></div>
-        <div>
+        <div class="service-img s1"></div>
+        <div class="service-body">
           <h3>Corte de pelo</h3>
           <p>Corte profesional con asesoría y terminación premium.</p>
           <strong>$15.000</strong>
@@ -71,8 +74,8 @@
       </article>
 
       <article>
-        <div class="service-photo cejas"></div>
-        <div>
+        <div class="service-img s2"></div>
+        <div class="service-body">
           <h3>Cejas</h3>
           <p>Perfilado limpio, natural y preciso.</p>
           <strong>$5.000</strong>
@@ -80,8 +83,8 @@
       </article>
 
       <article>
-        <div class="service-photo barba"></div>
-        <div>
+        <div class="service-img s3"></div>
+        <div class="service-body">
           <h3>Barba</h3>
           <p>Perfilado, navaja y cuidado de barba.</p>
           <strong>$12.000</strong>
@@ -89,8 +92,8 @@
       </article>
 
       <article>
-        <div class="service-photo completo"></div>
-        <div>
+        <div class="service-img s4"></div>
+        <div class="service-body">
           <h3>Completo</h3>
           <p>Corte de pelo, barba y cejas.</p>
           <strong>$28.000</strong>
@@ -99,43 +102,14 @@
     </div>
   </section>
 
-  <section class="experience-section">
-    <div class="experience-card">
-      <span>01</span>
-      <h3>Agenda simple</h3>
-      <p>El cliente reserva sin crear cuenta.</p>
+  <section id="reserva" class="home-section booking-area">
+    <div class="booking-info">
+      <span class="section-label">RESERVA ONLINE</span>
+      <h2>Agenda tu cita</h2>
+      <p>Completa tus datos y la reserva llegará directamente al panel del barbero.</p>
     </div>
 
-    <div class="experience-card">
-      <span>02</span>
-      <h3>Panel del barbero</h3>
-      <p>El dueño ve todos los cortes reservados.</p>
-    </div>
-
-    <div class="experience-card">
-      <span>03</span>
-      <h3>Beneficios cliente</h3>
-      <p>Crear cuenta permite recibir códigos de descuento.</p>
-    </div>
-  </section>
-
-  <section id="reservar" class="booking-section-v2">
-    <div class="booking-copy">
-      <span class="section-tag">Reserva online</span>
-      <h2>Agenda tu hora</h2>
-      <p>
-        Selecciona servicio, barbero, día y horario. Tu reserva llegará
-        directamente al panel del barbero.
-      </p>
-
-      <div class="discount-note">
-        <strong>¿Quieres descuentos?</strong>
-        <span>Crea una cuenta cliente y recibe códigos promocionales.</span>
-        <a href="/register">Crear cuenta cliente</a>
-      </div>
-    </div>
-
-    <form id="publicBookingForm" class="booking-form-v2">
+    <form id="publicBookingForm" class="booking-form">
       <input name="client_name" placeholder="Nombre completo" required>
       <input name="client_email" type="email" placeholder="Correo electrónico">
       <input name="client_phone" placeholder="Teléfono / WhatsApp" required>
@@ -159,34 +133,38 @@
 
       <textarea name="notes" placeholder="Comentario opcional: tipo de corte, referencia o detalle especial..."></textarea>
 
-      <button class="btn-main full">Confirmar reserva</button>
+      <button class="btn-gold full">Confirmar reserva</button>
     </form>
   </section>
 
-  <section id="contacto" class="contact-section">
+  <section id="contacto" class="home-section contact-card">
     <div>
-      <span class="section-tag">Contacto</span>
+      <span class="section-label">CONTACTO</span>
       <h2>Listo para tu próximo corte.</h2>
       <p>Agenda online o escríbenos por WhatsApp.</p>
     </div>
 
-    <div class="contact-box">
+    <div>
       <strong>Horario</strong>
       <span>Lunes a sábado · 09:00 a 18:00</span>
+
       <strong>Ubicación</strong>
       <span>Santiago, Chile</span>
+
       <strong>WhatsApp</strong>
       <span>+56 9 1111 1111</span>
     </div>
   </section>
 
-  <a class="whatsapp-float" target="_blank" href="https://wa.me/56911111111">
-    WhatsApp
-  </a>
-
-  <footer class="barber-footer">
-    <strong>BarberFlow</strong>
-    <span>Agenda premium para barberías modernas.</span>
+  <footer class="home-footer">
+    <span></span>
+    <strong>© 2026 BarberFlow · Barbería Premium</strong>
+    <span></span>
   </footer>
 
-</section>
+  <a class="whatsapp-button" 
+     href="https://wa.me/56911111111?text=Hola%2C%20quiero%20agendar%20una%20hora%20en%20la%20barber%C3%ADa" 
+     target="_blank">
+    <span>WhatsApp</span>
+  </a>
+</div>
