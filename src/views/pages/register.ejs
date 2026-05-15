@@ -1,29 +1,35 @@
 ﻿<section class="auth-page">
   <form class="auth-card" id="registerForm">
     <a href="/" class="brand auth-brand">BarberFlow</a>
+
+    <span class="eyebrow">Cuenta cliente</span>
+
     <h1>Crear cuenta</h1>
-    <p>Crea acceso para administrador o cliente.</p>
 
-    <label>Tipo de cuenta</label>
-    <select name="role">
-      <option value="admin">Administrador barbería</option>
-      <option value="client">Cliente</option>
-    </select>
+    <p>
+      Crea tu cuenta para recibir códigos de descuento, promociones y beneficios especiales.
+    </p>
 
-    <label>Nombre barbería</label>
-    <input name="barbershop_name" placeholder="Ej: Gentleman Barber Club">
+    <input type="hidden" name="role" value="client">
 
     <label>Nombre</label>
     <input name="name" placeholder="Tu nombre" required>
 
     <label>Correo</label>
-    <input name="email" type="email" placeholder="correo@barberflow.cl" required>
+    <input name="email" type="email" placeholder="correo@ejemplo.com" required>
 
     <label>Contraseña</label>
     <input name="password" type="password" placeholder="Contraseña" required>
 
-    <button class="btn gold w-100">Crear cuenta</button>
+    <div class="discount-box">
+      <strong>Código de bienvenida</strong>
+      <span>NUEVO10 · 10% de descuento en tu próxima visita.</span>
+    </div>
+
+    <button class="btn gold w-100">Crear cuenta cliente</button>
+
     <small>¿Ya tienes cuenta? <a href="/login">Ingresar</a></small>
+
     <div id="authMsg"></div>
   </form>
 </section>

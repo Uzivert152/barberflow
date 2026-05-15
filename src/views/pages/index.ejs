@@ -1,75 +1,192 @@
-﻿<section class="public-page">
-  <nav class="public-nav">
-    <a class="brand" href="/">BarberFlow</a>
-    <div>
+﻿<section class="barber-site">
+
+  <nav class="barber-nav">
+    <a href="/" class="brand-mark">
+      <span>BF</span>
+      BarberFlow
+    </a>
+
+    <div class="nav-links">
+      <a href="#nosotros">Nosotros</a>
       <a href="#servicios">Servicios</a>
       <a href="#reservar">Reservar</a>
-      <a href="/login" class="btn ghost">Admin</a>
+      <a href="#contacto">Contacto</a>
+      <a href="/login" class="nav-admin">Admin</a>
     </div>
   </nav>
 
-  <section class="public-hero">
-    <div>
-      <span class="eyebrow">Barbería premium</span>
-      <h1>Agenda tu corte con estilo y precisión.</h1>
-      <p>Reserva online sin crear cuenta. Elige servicio, barbero, fecha y hora.</p>
-      <a href="#reservar" class="btn gold big">Agendar hora</a>
-    </div>
+  <section class="barber-hero">
+    <div class="hero-overlay"></div>
 
-    <div class="hero-card">
-      <h3>Servicios destacados</h3>
-      <div class="service-line"><span>Corte de pelo</span><strong>$15.000</strong></div>
-      <div class="service-line"><span>Cejas</span><strong>$5.000</strong></div>
-      <div class="service-line"><span>Barba</span><strong>$12.000</strong></div>
-      <div class="service-line"><span>Completo</span><strong>$28.000</strong></div>
-    </div>
-  </section>
+    <div class="hero-content">
+      <span class="hero-kicker">Barbería premium para caballeros</span>
 
-  <section id="servicios" class="public-section">
-    <h2>Servicios</h2>
-    <div class="public-grid">
-      <article><h3>Corte de pelo</h3><strong>$15.000</strong><p>Corte profesional con terminación premium.</p></article>
-      <article><h3>Cejas</h3><strong>$5.000</strong><p>Perfilado limpio y natural.</p></article>
-      <article><h3>Barba</h3><strong>$12.000</strong><p>Perfilado, navaja y cuidado de barba.</p></article>
-      <article><h3>Completo</h3><strong>$28.000</strong><p>Corte de pelo, barba y cejas.</p></article>
-    </div>
-  </section>
+      <h1>Estilo, precisión y experiencia en cada corte.</h1>
 
-  <section id="reservar" class="public-section">
-    <div class="booking-card">
-      <div>
-        <span class="eyebrow">Reserva online</span>
-        <h2>Agendar hora</h2>
-        <p>Completa tus datos. La reserva llegará al panel del administrador como pendiente.</p>
+      <p>
+        Agenda tu hora online en segundos. Elige servicio, barbero,
+        fecha y horario disponible sin esperar por WhatsApp.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#reservar" class="btn-main">Agendar hora</a>
+        <a href="#servicios" class="btn-secondary">Ver servicios</a>
       </div>
+    </div>
 
-      <form id="publicBookingForm" class="public-booking-form">
-        <input name="client_name" placeholder="Nombre completo" required>
-        <input name="client_email" type="email" placeholder="Correo electrónico">
-        <input name="client_phone" placeholder="Teléfono / WhatsApp" required>
-
-        <select name="service_id" id="publicServices" required></select>
-        <select name="barber_id" id="publicBarbers" required></select>
-
-        <input name="booking_date" type="date" required>
-        <select name="booking_time" required>
-          <option value="">Seleccionar hora</option>
-          <option value="09:00">09:00</option>
-          <option value="10:00">10:00</option>
-          <option value="11:00">11:00</option>
-          <option value="12:00">12:00</option>
-          <option value="15:00">15:00</option>
-          <option value="16:00">16:00</option>
-          <option value="17:00">17:00</option>
-          <option value="18:00">18:00</option>
-        </select>
-
-        <textarea name="notes" placeholder="Comentario opcional: tipo de corte, referencia, detalle especial..."></textarea>
-
-        <button class="btn gold w-100">Enviar reserva</button>
-      </form>
+    <div class="hero-info-card">
+      <strong>Reserva online</strong>
+      <span>Cortes · Barba · Cejas · Completo</span>
     </div>
   </section>
 
-  <footer>BarberFlow © 2026 — Sistema profesional para barberías.</footer>
+  <section id="nosotros" class="about-section">
+    <div>
+      <span class="section-tag">Nuestra esencia</span>
+      <h2>Una barbería con carácter, técnica y atención personalizada.</h2>
+    </div>
+
+    <p>
+      Creamos una experiencia cómoda, elegante y profesional. Desde un corte clásico
+      hasta un servicio completo, cada atención está pensada para que salgas con
+      seguridad, estilo y una imagen impecable.
+    </p>
+  </section>
+
+  <section id="servicios" class="services-section-v2">
+    <div class="section-center">
+      <span class="section-tag">Servicios</span>
+      <h2>Elige tu próxima atención</h2>
+      <p>Precios claros, duración definida y reserva inmediata.</p>
+    </div>
+
+    <div class="service-cards-v2">
+      <article>
+        <div class="service-photo corte"></div>
+        <div>
+          <h3>Corte de pelo</h3>
+          <p>Corte profesional con asesoría y terminación premium.</p>
+          <strong>$15.000</strong>
+        </div>
+      </article>
+
+      <article>
+        <div class="service-photo cejas"></div>
+        <div>
+          <h3>Cejas</h3>
+          <p>Perfilado limpio, natural y preciso.</p>
+          <strong>$5.000</strong>
+        </div>
+      </article>
+
+      <article>
+        <div class="service-photo barba"></div>
+        <div>
+          <h3>Barba</h3>
+          <p>Perfilado, navaja y cuidado de barba.</p>
+          <strong>$12.000</strong>
+        </div>
+      </article>
+
+      <article>
+        <div class="service-photo completo"></div>
+        <div>
+          <h3>Completo</h3>
+          <p>Corte de pelo, barba y cejas.</p>
+          <strong>$28.000</strong>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="experience-section">
+    <div class="experience-card">
+      <span>01</span>
+      <h3>Agenda simple</h3>
+      <p>El cliente reserva sin crear cuenta.</p>
+    </div>
+
+    <div class="experience-card">
+      <span>02</span>
+      <h3>Panel del barbero</h3>
+      <p>El dueño ve todos los cortes reservados.</p>
+    </div>
+
+    <div class="experience-card">
+      <span>03</span>
+      <h3>Beneficios cliente</h3>
+      <p>Crear cuenta permite recibir códigos de descuento.</p>
+    </div>
+  </section>
+
+  <section id="reservar" class="booking-section-v2">
+    <div class="booking-copy">
+      <span class="section-tag">Reserva online</span>
+      <h2>Agenda tu hora</h2>
+      <p>
+        Selecciona servicio, barbero, día y horario. Tu reserva llegará
+        directamente al panel del barbero.
+      </p>
+
+      <div class="discount-note">
+        <strong>¿Quieres descuentos?</strong>
+        <span>Crea una cuenta cliente y recibe códigos promocionales.</span>
+        <a href="/register">Crear cuenta cliente</a>
+      </div>
+    </div>
+
+    <form id="publicBookingForm" class="booking-form-v2">
+      <input name="client_name" placeholder="Nombre completo" required>
+      <input name="client_email" type="email" placeholder="Correo electrónico">
+      <input name="client_phone" placeholder="Teléfono / WhatsApp" required>
+
+      <select name="service_id" id="publicServices" required></select>
+      <select name="barber_id" id="publicBarbers" required></select>
+
+      <input name="booking_date" type="date" required>
+
+      <select name="booking_time" required>
+        <option value="">Seleccionar hora</option>
+        <option value="09:00">09:00</option>
+        <option value="10:00">10:00</option>
+        <option value="11:00">11:00</option>
+        <option value="12:00">12:00</option>
+        <option value="15:00">15:00</option>
+        <option value="16:00">16:00</option>
+        <option value="17:00">17:00</option>
+        <option value="18:00">18:00</option>
+      </select>
+
+      <textarea name="notes" placeholder="Comentario opcional: tipo de corte, referencia o detalle especial..."></textarea>
+
+      <button class="btn-main full">Confirmar reserva</button>
+    </form>
+  </section>
+
+  <section id="contacto" class="contact-section">
+    <div>
+      <span class="section-tag">Contacto</span>
+      <h2>Listo para tu próximo corte.</h2>
+      <p>Agenda online o escríbenos por WhatsApp.</p>
+    </div>
+
+    <div class="contact-box">
+      <strong>Horario</strong>
+      <span>Lunes a sábado · 09:00 a 18:00</span>
+      <strong>Ubicación</strong>
+      <span>Santiago, Chile</span>
+      <strong>WhatsApp</strong>
+      <span>+56 9 1111 1111</span>
+    </div>
+  </section>
+
+  <a class="whatsapp-float" target="_blank" href="https://wa.me/56911111111">
+    WhatsApp
+  </a>
+
+  <footer class="barber-footer">
+    <strong>BarberFlow</strong>
+    <span>Agenda premium para barberías modernas.</span>
+  </footer>
+
 </section>

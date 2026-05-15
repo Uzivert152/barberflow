@@ -103,7 +103,7 @@ app.post('/api/auth/register', async (req, res) => {
       return res.status(400).json({ success:false, message:'Completa todos los campos obligatorios' });
     }
 
-    const finalRole = role || 'client';
+    const finalRole = 'client';
     let barbershopId = null;
 
     if (finalRole === 'admin') {
@@ -591,3 +591,5 @@ app.patch('/api/bookings/:id/status', authApi, only('admin','barber'), async (re
     message:'Estado actualizado'
   });
 });
+
+
